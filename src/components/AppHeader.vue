@@ -9,12 +9,35 @@ export default {
         <nav class="main-nav">
             <div class="menu">
                 <ul>
-
+                    <li>
+                        <a href="#">home</a>
+                        <font-awesome-icon icon="fa-solid fa-chevron-down" class="pulldown-icon" />
+                    </li>
+                    <li>
+                        <a href="#">pages</a>
+                        <font-awesome-icon icon="fa-solid fa-chevron-down" class="pulldown-icon" />
+                    </li>
+                    <li>
+                        <a href="#">courses</a>
+                        <font-awesome-icon icon="fa-solid fa-chevron-down" class="pulldown-icon" />
+                    </li>
+                    <li>
+                        <a href="#">features</a>
+                        <font-awesome-icon icon="fa-solid fa-chevron-down" class="pulldown-icon" />
+                    </li>
+                    <li>
+                        <a href="#">blog</a>
+                        <font-awesome-icon icon="fa-solid fa-chevron-down" class="pulldown-icon" />
+                    </li>
+                    <li>
+                        <a href="#">shop</a>
+                        <font-awesome-icon icon="fa-solid fa-chevron-down" class="pulldown-icon" />
+                    </li>
                 </ul>
             </div> <!--menu to navigate thru the website-->
 
             <div class="logo">
-
+                <img src="../assets/img/dark-logo.png" alt="">
             </div> <!--logo of the company-->
 
             <div class="user-area">
@@ -30,13 +53,37 @@ export default {
 .main-nav {
     display: flex;
     justify-content: space-between;
+    color: $main-font-color;
+    font-size: 18px;
 }
 
 .menu,
 .logo,
 .user-area {
-    width: 200px;
-    height: 60px;
-    background-color: $secondary-multi-color;
+    width: 488px;
+}
+
+.menu li {
+    display: inline;
+    text-transform: capitalize;
+    margin-right: 20px;
+
+    a {
+        text-decoration: none;
+        color: $main-font-color;
+    }
+}
+
+.pulldown-icon {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.logo {
+    text-align: center;
+
+    img {
+        width: 200px;
+    }
 }
 </style>
