@@ -1,0 +1,13 @@
+@use './partials/variables' as *;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    width: 80%;
+    background-color: $main-multi-color;
+    margin: 25px auto;
+}
