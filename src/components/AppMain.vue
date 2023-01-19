@@ -1,13 +1,17 @@
 <script>
-export default {
+import AppJumbotron from './AppMain components/AppJumbotron.vue';
 
+export default {
+    name: 'AppMain',
+
+    components: {
+        AppJumbotron
+    }
 }
 </script>
 
 <template>
-    <div>
-
-    </div>
+    <AppJumbotron />
 </template>
 
 <style lang="scss" scoped>
