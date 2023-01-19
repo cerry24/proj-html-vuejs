@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 li {
     list-style-type: none;
 }
@@ -22,4 +28,9 @@ li {
     border: none;
     border-radius: 5px;
     padding: 10px;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 15px 30px;
 }
