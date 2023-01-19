@@ -26,7 +26,29 @@ export default {
             <div class="pink-circle"></div> <!--pink circle decoration-->
 
             <div class="images">
+                <img src="../../assets/img/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg"
+                    alt="People studying image" class="img-big">
+                <img src="../../assets/img/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg"
+                    alt="Person studying image" class="img-small">
+                <img src="../../assets/img/maxcoach-shape-07-150x150.png" alt="Ornamental square pattern"
+                    class="square-pattern">
+                <img src="../../assets/img/maxcoach-shape-02.png" alt="ornamental circle pattern"
+                    class="circle-pattern">
+            </div>
 
+            <div class="statistics">
+                <div>
+                    <span>129+</span>
+                    <p>enrolled learners</p>
+                </div>
+                <div>
+                    <span>80</span>
+                    <p>finished sessions</p>
+                </div>
+                <div>
+                    <span>4%</span>
+                    <p>satisfaction rate</p>
+                </div>
             </div>
         </div>
     </section>
@@ -38,7 +60,8 @@ export default {
 .container {
     width: 70%;
     display: flex;
-    margin: 100px auto;
+    flex-wrap: wrap;
+    margin: 150px auto;
 }
 
 #work-culture {
@@ -50,12 +73,12 @@ export default {
     width: 30%;
 
     h2 {
-        font-size: 26px;
+        font-size: 30px;
         color: $main-font-color;
 
         span {
             color: $secondary-multi-color;
-            font-size: 26px;
+            font-size: 30px;
             font-weight: normal;
         }
     }
@@ -85,5 +108,66 @@ p {
 
 .pink-circle {
     margin-left: 50px;
+}
+
+.images {
+    position: relative;
+    margin-left: 100px;
+}
+
+.img-big,
+.img-small {
+    border-radius: 5px;
+}
+
+.img-big {
+    height: 80%;
+    z-index: 1;
+}
+
+.img-small {
+    z-index: 2;
+    position: absolute;
+    bottom: 250px;
+    right: 0;
+}
+
+.square-pattern {
+    z-index: -1;
+    position: absolute;
+    bottom: 282px;
+    right: 112px;
+}
+
+.circle-pattern {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+}
+
+.statistics {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    padding: 0 100px;
+
+    div {
+        text-align: center;
+
+        span {
+            display: block;
+            font-size: 35px;
+            font-weight: bold;
+            color: $secondary-multi-color;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: $highlight-font-color;
+            text-transform: uppercase;
+        }
+    }
 }
 </style>
