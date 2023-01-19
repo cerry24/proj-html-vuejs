@@ -2,6 +2,7 @@
 import AppJumbotron from './AppMain components/AppJumbotron.vue';
 import SectionWorkculture from './AppMain components/SectionWorkculture.vue';
 import SectionHowwework from './AppMain components/SectionHowwework.vue';
+import SectionCourses from './AppMain components/SectionCourses.vue';
 
 export default {
     name: 'AppMain',
@@ -9,7 +10,8 @@ export default {
     components: {
         AppJumbotron,
         SectionWorkculture,
-        SectionHowwework
+        SectionHowwework,
+        SectionCourses
     }
 }
 </script>
@@ -20,6 +22,8 @@ export default {
     <SectionWorkculture />
 
     <SectionHowwework />
+
+    <SectionCourses />
 </template>
 
 <style lang="scss" scoped>
