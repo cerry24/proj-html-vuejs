@@ -6,7 +6,7 @@ export default {
 
 <template>
     <section id="work-culture">
-        <div class="container">
+        <div class="main-container">
             <div class="text"> <!--left part of the section with title and paragraph-->
                 <p class="section-intro">everything in <span>maxcoah</span></p>
                 <h2>Learn about our <span>work culture</span> at MaxCoach</h2>
@@ -25,7 +25,7 @@ export default {
 
             <div class="pink-circle"></div> <!--pink circle decoration-->
 
-            <div class="images">
+            <div class="images"> <!--decoration images-->
                 <img src="../../assets/img/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg"
                     alt="People studying image" class="img-big">
                 <img src="../../assets/img/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg"
@@ -36,7 +36,7 @@ export default {
                     class="circle-pattern">
             </div>
 
-            <div class="statistics">
+            <div class="statistics"> <!--statistics of the courses-->
                 <div>
                     <span>129+</span>
                     <p>enrolled learners</p>
@@ -56,13 +56,6 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
-
-.container {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 150px auto;
-}
 
 #work-culture {
     background-color: $main-multi-color;

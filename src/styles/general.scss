@@ -13,6 +13,19 @@
     align-items: center;
 }
 
+.header-container {
+    width: 90%;
+    background-color: $main-multi-color;
+    margin: 25px auto;
+}
+
+.main-container {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 150px auto;
+}
+
 main {
     color: $main-font-color;
 }
@@ -30,12 +43,6 @@ li {
     height: 50px;
     border: 6px solid #ecc5ab;
     border-radius: 50%;
-}
-
-.header-container {
-    width: 90%;
-    background-color: $main-multi-color;
-    margin: 25px auto;
 }
 
 
