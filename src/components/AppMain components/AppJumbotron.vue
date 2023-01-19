@@ -60,10 +60,6 @@ h1 {
 
     color: $secondary-multi-color;
     background-color: $main-multi-color;
-
-    .arrow-icon {
-        vertical-align: bottom;
-    }
 }
 
 .jumbo-menu {

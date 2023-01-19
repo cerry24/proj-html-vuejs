@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 18px;
 }
 
 .flex-centered {
@@ -12,8 +13,23 @@
     align-items: center;
 }
 
+main {
+    color: $main-font-color;
+}
+
 li {
     list-style-type: none;
+}
+
+.arrow-icon {
+    vertical-align: bottom;
+}
+
+.pink-circle {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ecc5ab;
+    border-radius: 50%;
 }
 
 .header-container {
