@@ -7,7 +7,7 @@ export default {
 <template>
     <div class="header-container">
         <nav class="main-nav">
-            <div class="menu">
+            <div class="menu"> <!--menu to navigate thru the website-->
                 <ul>
                     <li>
                         <a href="#">home</a>
@@ -34,15 +34,20 @@ export default {
                         <font-awesome-icon icon="fa-solid fa-chevron-down" class="pulldown-icon" />
                     </li>
                 </ul>
-            </div> <!--menu to navigate thru the website-->
+            </div>
 
-            <div class="logo">
-                <img src="../assets/img/dark-logo.png" alt="">
-            </div> <!--logo of the company-->
+            <div class="logo"> <!--logo of the company-->
+                <img src="../assets/img/dark-logo.png" alt="MaxCoach logo">
+            </div>
 
-            <div class="user-area">
-                cart user searchbar
-            </div> <!--user searchbar, access to shooping cart & private user area-->
+            <div class="user-area"> <!--user searchbar, access to shooping cart & private user area-->
+                <span class="cart-item-counter">0</span>
+                <a href="#" class="cart"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a>
+                <a href="#" class="user-settings"><font-awesome-icon icon="fa-regular fa-circle-user" /></a>
+
+                <input type="text" name="user-searchbar" id="user-searchbar" class="user-input" placeholder="Search...">
+                <a href="#" class="btn-search"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>
+            </div>
         </nav>
     </div>
 </template>
@@ -53,7 +58,6 @@ export default {
 .main-nav {
     display: flex;
     justify-content: space-between;
-    color: $main-font-color;
     font-size: 18px;
 }
 
@@ -63,14 +67,18 @@ export default {
     width: 488px;
 }
 
-.menu li {
-    display: inline;
-    text-transform: capitalize;
-    margin-right: 20px;
+.menu {
+    color: $nav-font-color;
 
-    a {
-        text-decoration: none;
-        color: $main-font-color;
+    li {
+        display: inline;
+        text-transform: capitalize;
+        margin-right: 20px;
+
+        a {
+            text-decoration: none;
+            color: $nav-font-color;
+        }
     }
 }
 
@@ -85,5 +93,47 @@ export default {
     img {
         width: 200px;
     }
+}
+
+.user-area {
+    text-align: end;
+    position: relative;
+}
+
+.cart-item-counter {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $main-multi-color;
+    background-color: $secondary-multi-color;
+    border-radius: 50%;
+    left: 158px;
+}
+
+.cart,
+.user-settings {
+    color: $main-font-color;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#user-searchbar {
+    width: 225px;
+    height: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn-search {
+    height: 100%;
+    display: inline-block;
+    background-color: $secondary-bg-color;
+    color: $secondary-multi-color;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
 }
 </style>
