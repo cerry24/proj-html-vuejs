@@ -41,7 +41,7 @@ export default {
             </div>
 
             <div class="user-area"> <!--user searchbar, access to shooping cart & private user area-->
-                <span class="cart-item-counter">0</span>
+                <span class="cart-item-counter flex-centered">0</span>
                 <a href="#" class="cart"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a>
                 <a href="#" class="user-settings"><font-awesome-icon icon="fa-regular fa-circle-user" /></a>
 
@@ -101,12 +101,10 @@ export default {
 }
 
 .cart-item-counter {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 15px;
     color: $main-multi-color;
     background-color: $secondary-multi-color;
     border-radius: 50%;
