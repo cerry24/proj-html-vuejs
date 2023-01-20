@@ -1,5 +1,7 @@
 <script>
-import CoursesCards from './CoursesCards.vue';
+import { store } from '../../store.js';
+
+import CoursesCards from '../dynamic components/CoursesCards.vue';
 
 export default {
     name: 'SectionCourses',
@@ -31,15 +33,11 @@ export default {
                     price: 19,
                     students: 62
                 }
-            }
-        }
-    },
+            },
 
-    methods: {
-        getImagePath: function (imgName) {
-            return new URL(`../../assets/img/${imgName}.jpg`, import.meta.url).href;
+            store
         }
-    },
+    }
 }
 </script>
 
@@ -52,7 +50,7 @@ export default {
             </div>
 
             <div class="cards-wrapper">
-                <CoursesCards v-for="course in coursesList" :imagePath="getImagePath(course.imageName)"
+                <CoursesCards v-for="course in coursesList" :imagePath="store.getImagePath(course.imageName)"
                     :description="course.description" :price="course.price" :lessons="course.lessonNumber"
                     :students="course.students" />
             </div>
