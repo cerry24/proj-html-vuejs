@@ -1,33 +1,44 @@
 <script>
-import { store } from '../../store.js';
+import BlogCards from '../dynamic components/BlogCards.vue';
 
 export default {
     name: 'SectionBlog',
 
+    components: {
+        BlogCards
+    },
+
     data() {
         return {
             blogArticles: {
-                01: {
+                1: {
                     imageName: 'artist-blog-03-480x325',
+                    category: 'artist',
                     title: 'brush strokes energize trees in paintings',
                     publicationDate: 'may 15, 2020',
                     viewsNumber: 688
                 },
-                02: {
+                2: {
                     imageName: 'artist-blog-01-480x325',
+                    category: 'artist',
                     title: 'pocket-size notebooks hold miniature paintings',
                     publicationDate: 'may 15, 2020',
                     viewsNumber: 603
                 },
-                03: {
+                3: {
                     imageName: 'artist-blog-02-480x325',
+                    category: 'artist',
                     title: 'connection between self-portraits and identity',
                     publicationDate: 'may 15, 2020',
                     viewsNumber: 397
                 },
-            },
+            }
+        }
+    },
 
-            store
+    methods: {
+        getImagePath: function (imgName) {
+            return new URL(`../../assets/img/${imgName}.jpg`, import.meta.url).href;
         }
     },
 }
@@ -42,6 +53,9 @@ export default {
             </div>
 
             <div class="cards-wrapper">
+                <BlogCards v-for="article in blogArticles" :imagePath="getImagePath(article.imageName)"
+                    :category="article.category" :title="article.title" :date="article.publicationDate"
+                    :views="article.viewsNumber" />
             </div>
         </div>
     </section>
