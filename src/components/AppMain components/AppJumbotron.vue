@@ -62,6 +62,11 @@ h1 {
     background-color: $main-multi-color;
 }
 
+.btn-download:hover {
+    color: $main-multi-color;
+    background-color: $secondary-multi-color;
+}
+
 .jumbo-menu {
     display: flex;
     flex-direction: column;

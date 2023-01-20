@@ -77,6 +77,10 @@ export default {
         margin-bottom: 25px;
     }
 
+    h3:hover {
+        color: $secondary-multi-color;
+    }
+
     span {
         margin-right: 10px;
     }

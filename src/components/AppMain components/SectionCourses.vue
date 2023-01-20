@@ -76,14 +76,23 @@ export default {
             </div>
         </div>
     </section>
+    <div class="wave"></div>
 </template>
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: $secondary-bg-color;
+    top: 280%;
+    z-index: -1;
+}
+
 #courses {
     color: $secondary-font-color;
-    background-color: $main-multi-color;
 }
 
 .title {

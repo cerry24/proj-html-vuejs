@@ -49,8 +49,8 @@ export default {
 @use '../../styles/partials/variables' as *;
 
 #testimonials {
-    background-color: $main-multi-color;
     color: $secondary-font-color;
+    padding-top: 30px;
 }
 
 .main-container {
