@@ -7,6 +7,10 @@ export default {
 <template>
     <section id="newsletter">
         <div class="main-container">
+            <div class="decoration wrapper">
+                <div class="main-color-circle"></div>
+            </div>
+
             <div class="content">
                 <h2>subscribe <span>newsletter</span></h2>
                 <p>
@@ -15,6 +19,12 @@ export default {
                 <input type="email" name="umail-input" id="mail-input" class="user-input"
                     placeholder="Enter your email">
                 <a href="#" class="btn-subscribe user-input">subscribe</a>
+            </div>
+
+            <div class="decoration wrapper">
+                <img src="../../assets/img/maxcoach-shape-09.png" alt="rombal pattern image">
+                <img src="../../assets/img/maxcoach-shape-02.png" alt="ornamental circle pattern"
+                    class="circle-pattern">
             </div>
         </div>
     </section>
@@ -26,6 +36,27 @@ export default {
 #newsletter {
     background-color: $main-multi-color;
     text-align: center;
+}
+
+.main-container {
+    justify-content: space-between;
+}
+
+.decoration-wrapper {
+    width: 10%;
+    position: relative;
+}
+
+.circle-pattern {
+    position: absolute;
+    right: 17%;
+}
+
+.main-color-circle {
+    width: 50px;
+    height: 50px;
+    border: 6px solid $secondary-multi-color;
+    border-radius: 50%;
 }
 
 .content {
