@@ -133,5 +133,6 @@ export default {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 10px;
+    vertical-align: bottom;
 }
 </style>

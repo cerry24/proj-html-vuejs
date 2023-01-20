@@ -6,6 +6,7 @@ import SectionCourses from './AppMain components/SectionCourses.vue';
 import SectionTestimonials from './AppMain components/SectionTestimonials.vue';
 import SectionTrnsform from './AppMain components/SectionTransform.vue';
 import SectionBlog from './AppMain components/SectionBlog.vue';
+import SectionNewsletter from './AppMain components/SectionNewsletter.vue';
 
 export default {
     name: 'AppMain',
@@ -17,7 +18,8 @@ export default {
         SectionCourses,
         SectionTestimonials,
         SectionTrnsform,
-        SectionBlog
+        SectionBlog,
+        SectionNewsletter
     }
 }
 </script>
@@ -36,6 +38,8 @@ export default {
     <SectionTrnsform />
 
     <SectionBlog />
+
+    <SectionNewsletter />
 </template>
 
 <style lang="scss" scoped>
